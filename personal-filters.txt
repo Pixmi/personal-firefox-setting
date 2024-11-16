@@ -1,0 +1,75 @@
+! Title: Pixmi uBlock Origin filters
+! Version: 2024.1112.1
+! Expires: 24 hour
+! Homepage: https://pixmi.dev
+
+! https://news.tvbs.com.tw
+news.tvbs.com.tw##span.endtext
+
+! https://www.mobile01.com
+www.mobile01.com##.fancybox-container
+
+! https://www.myacg.com.tw
+www.myacg.com.tw##.acg_top
+
+! https://www.card.rakuten.com.tw
+www.card.rakuten.com.tw##.popup
+
+! https://www.facebook.com
+www.facebook.com##div[data-nosnippet=""]
+
+! https://yahoo.com
+yahoo.com###module-stockSearchBar
+yahoo.com###AsideStream
+yahoo.com###caas-content-body ~ div
+yahoo.com##footer
+
+! https://techbang.com
+techbang.com##.popup-items.google-news-wrapper
+techbang.com##.ad-section
+techbang.com##aside.network-wrapper
+techbang.com##.comments
+techbang.com##.newsletter2in1
+
+! https://technews.tw
+technews.tw##.widget-area
+technews.tw##.tipbar
+technews.tw###activity_vip
+technews.tw##.widget_banner.widget
+technews.tw##.coffee-btn-wrapper
+technews.tw##.widget_banner.widget
+technews.tw##a#scrollup:remove()
+technews.tw##a#scrolldown:remove()
+
+! storm.mg
+storm.mg##.support_us_btn
+storm.mg###side_bar_inner > div:not(#vue_side_bar_content)
+storm.mg###feature_img_banner_wrapper
+storm.mg###news_list_wrapper
+storm.mg###fb_comments_wrapper
+storm.mg###category_content
+storm.mg###more_news_wrapper
+storm.mg###footer_inner
+
+! global.udn.com
+global.udn.com##.social_bar
+global.udn.com##nav.channel-link
+global.udn.com###comments
+global.udn.com###story_end+div
+global.udn.com##nav.only_web
+global.udn.com###menu_bar
+
+! http://www.youtube.com
+youtube.com##+js(nano-stb, resolve(1), *, 0.001)
+||googlevideo.com/videoplayback$xhr,3p,method=get,domain=www.youtube.com
+
+! kfcclub.com.tw
+kfcclub.com.tw###BN_Linker_OrderComplete
+
+! gigafile.nu
+gigafile.nu###main_panel
+
+! shopee
+||shopee.*^$removeparam=sp_atk
+||shopee.*^$removeparam=xptdk
+||shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
