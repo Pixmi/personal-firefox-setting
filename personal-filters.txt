@@ -72,7 +72,7 @@ gigafile.nu###main_panel
 ! shopee
 ||shopee.*^$removeparam=sp_atk
 ||shopee.*^$removeparam=xptdk
-||shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
+shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
 
 ! unikoshardware.com
 unikoshardware.com##^.widget.widget-no-margin.uniko-widget
