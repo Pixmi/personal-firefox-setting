@@ -73,3 +73,8 @@ gigafile.nu###main_panel
 ||shopee.*^$removeparam=sp_atk
 ||shopee.*^$removeparam=xptdk
 ||shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
+
+! unikoshardware.com
+unikoshardware.com##^.widget.widget-no-margin.uniko-widget
+unikoshardware.com##^.jeg_share_button
+unikoshardware.com##.entry-content>.content-inner:style(margin-left:0 !important)
