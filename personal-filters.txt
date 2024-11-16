@@ -71,8 +71,9 @@ kfcclub.com.tw###BN_Linker_OrderComplete
 gigafile.nu###main_panel
 
 ! shopee
-||shopee.*^$removeparam=sp_atk
-||shopee.*^$removeparam=xptdk
+shopee.*##^[data-sqe="ad"]:upward([data-sqe="item"])
+shopee.*^$removeparam=sp_atk
+shopee.*^$removeparam=xptdk
 shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
 
 ! unikoshardware.com
