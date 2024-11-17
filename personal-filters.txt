@@ -80,3 +80,41 @@ shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
 unikoshardware.com##^.widget.widget-no-margin.uniko-widget
 unikoshardware.com##^.jeg_share_button
 unikoshardware.com##.entry-content>.content-inner:style(margin-left:0 !important)
+
+! wenku8.net block and style
+wenku8.net##div#adtop
+wenku8.net##div[id*="adv"]
+wenku8.net###headlink>#linkright
+wenku8.net###foottext>a[href^="https"]
+wenku8.net##body:style(background-color: #ece4d1 !important; font-family: 'Microsoft JhengHei','PingFang TC','Meiryo',sans-serif !important; font-weight: normal !important; padding: 0 !important; margin: 0 !important;)
+wenku8.net###headlink:style(background-color: rgba(0,0,0,.2) !important; border: none !important; color: #555 !important; margin-left: auto !important; margin-right: auto !important; max-width: 100vw !important; min-width: unset !important;)
+wenku8.net###headlink a:style(color: #555 !important;)
+wenku8.net###headlink a:hover:style(color: #222 !important; text-decoration: underline !important;)
+wenku8.net###content:style(color: #333 !important;)
+wenku8.net###contentmain:style(border-left: none !important; border-right: none !important; line-height: 1.68 !important;)
+wenku8.net##.divimage img:style(max-width: 100% !important;)
+
+! esjzone.cc block and style
+www.esjzone.cc##div,p,span,a:style(font-family: 'Microsoft JhengHei','PingFang TC','Meiryo',sans-serif !important;)
+www.esjzone.cc##.navbar>.customizer:style(top: unset !important; bottom: 5px !important;)
+www.esjzone.cc##.customizer-toggle:style(top: unset !important; bottom: 0 !important;)
+www.esjzone.cc##.scroll-to-end-btn
+
+! manhuagui.com block and style
+manhuagui.com##body>.header
+manhuagui.com##.sub-btn
+manhuagui.com##.gg_980
+manhuagui.com##.ra-980
+manhuagui.com##.ra-4x1
+manhuagui.com##.title
+manhuagui.com##.tc
+manhuagui.com##.footer
+manhuagui.com##.book-similar
+manhuagui.com##body:style(font-family: 'Microsoft JhengHei','PingFang TC','Meiryo',sans-serif !important;)
+manhuagui.com##table.tbCenter:style(border: none !important; width: auto !important;)
+manhuagui.com##img#mangaFile:style(max-width: 100% !important; max-height: 100vh !important; height: 100vh !important;)
+
+! y3939.net block and style
+y3939.net##.topnav
+y3939.net##.header_box,.function_box,#btn_newvote,.voteposter_photo,.photo_time,.topbar_name+div:matches-media((max-width: 800px)):style(display: none !important)
+y3939.net##.msg_name:matches-media((max-width: 800px)):style(width: 100px !important)
