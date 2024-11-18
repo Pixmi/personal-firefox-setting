@@ -8,9 +8,19 @@ just for my self used.
 
 for Filter lists.
 
+**link:**
+```text
+https://raw.githubusercontent.com/Pixmi/personal-firefox-setting/refs/heads/main/ubo-filters.txt
+```
+
 ### my-filters.txt
 
 for My filters (need trust).
+
+**link:**
+```text
+https://raw.githubusercontent.com/Pixmi/personal-firefox-setting/refs/heads/main/my-filters.txt
+```
 
 ## User Style
 
