@@ -1,8 +1,8 @@
 ! Title: Pixmi uBlock Origin filters
 ! Version: 2024.11.16
 ! Expires: 12 hour
-! Homepage: https://github.com/Pixmi/ubo-filters
-! LICENSE: https://github.com/Pixmi/ubo-filters/blob/main/LICENSE
+! Homepage: https://github.com/Pixmi/personal-firefox-setting
+! LICENSE: https://github.com/Pixmi/personal-firefox-setting/blob/main/LICENSE
 
 ! https://news.tvbs.com.tw
 news.tvbs.com.tw##span.endtext

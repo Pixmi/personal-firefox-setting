@@ -1,3 +1,9 @@
+! Title: Pixmi uBlock Origin trust-filters
+! Version: 2024.11.16
+! Expires: 12 hour
+! Homepage: https://github.com/Pixmi/personal-firefox-setting
+! LICENSE: https://github.com/Pixmi/personal-firefox-setting/blob/main/LICENSE
+
 ! twitter image replace
 pbs.twimg.com/media^$uritransform=/([a-zA-Z0-9-_]+)\?format=(jpg|jpeg|png|gif)(.*)/\$1.\$2?name=orig/i
 pbs.twimg.com/media^$uritransform=/\:(small|normal|large)/?name=orig/i

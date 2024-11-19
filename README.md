@@ -6,20 +6,20 @@ just for my self used.
 
 ### ubo-filters.txt
 
-for Filter lists.
+normal filters.
 
 **link:**
 ```text
 https://raw.githubusercontent.com/Pixmi/personal-firefox-setting/refs/heads/main/ubo-filters.txt
 ```
 
-### my-filters.txt
+### ubo-trust-filters.txt
 
-for My filters (need trust).
+need trust filters.
 
 **link:**
 ```text
-https://raw.githubusercontent.com/Pixmi/personal-firefox-setting/refs/heads/main/my-filters.txt
+https://raw.githubusercontent.com/Pixmi/personal-firefox-setting/refs/heads/main/ubo-trust-filters.txt
 ```
 
 ### ptt-light-theme.txt
