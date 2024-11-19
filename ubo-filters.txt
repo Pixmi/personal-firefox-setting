@@ -118,5 +118,5 @@ manhuagui.com##table.tbCenter:style(border: none !important; width: auto !import
 manhuagui.com##img#mangaFile:style(max-width: 100% !important; max-height: 100vh !important; height: 100vh !important;)
 
 ! y3939.net block and style
-y3939.net##.header_box,.function_box,#btn_newvote,.voteposter_photo,.photo_time,.topbar_name+div:matches-media((max-width: 800px)):style(display: none !important)
+y3939.net##.topnav,.header_box,.function_box,#btn_newvote,.voteposter_photo,.photo_time,.topbar_name+div:matches-media((max-width: 800px)):style(display: none !important)
 y3939.net##.msg_name:matches-media((max-width: 800px)):style(width: 100px !important)
