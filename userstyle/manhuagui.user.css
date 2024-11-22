@@ -1,0 +1,36 @@
+/* ==UserStyle==
+@name           manhuagui style
+@namespace      https://github.com/Pixmi/
+@version        1.0.0
+@description    for manhuagui.com
+@author         Pixmi
+@license        GPL-3.0
+@preprocessor   stylus
+==/UserStyle== */
+
+body > .header,
+.sub-btn,
+.gg_980,
+.ra-980,
+.ra-4x1,
+.title,
+.tc,
+.footer,
+.book-similar {
+    display: none !important;
+}
+
+body {
+    font-family: 'Microsoft JhengHei', 'PingFang TC', 'Meiryo', sans-serif;
+}
+
+table.tbCenter {
+    border: none;
+    width: auto;
+}
+
+img#mangaFile {
+    max-width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+}
