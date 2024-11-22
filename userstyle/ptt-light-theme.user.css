@@ -1,0 +1,228 @@
+/* ==UserStyle==
+@name           PTT light theme style
+@namespace      https://github.com/Pixmi/
+@version        1.0.0
+@description    for ptt.cc
+@author         Pixmi
+@license        GPL-3.0
+@preprocessor   stylus
+==/UserStyle== */
+
+.b0 { background-color: #343a40; }
+.b1 { background-color: #dc3545; }
+.b2 { background-color: #28a745; }
+.b3 { background-color: #ffc107; }
+.b4 { background-color: #007bff; }
+.b5 { background-color: #6f42c1; }
+.b6 { background-color: #17a2b8; }
+.b7 { background-color: #6c757d; }
+
+.f0 { color: #343a40; }
+.f1 { color: #dc3545; }
+.f2 { color: #139d33; }
+.f3 { color: #fffc44; }
+.f4 { color: #007bff; }
+.f5 { color: #6f42c1; }
+.f6 { color: #1192b0; }
+.f7 { color: #f8f9fa; }
+
+.hl { color: #555; }
+.hl.f0 { color: #666; }
+.hl.f1 { color: #ff5757; }
+.hl.f2 { color: #24bd24; }
+.hl.f3 { color: #f68e08; }
+.hl.f4 { color: #6291ea; }
+.hl.f5 { color: #d771e6; }
+.hl.f6 { color: #4dc4c4; }
+.hl.f7 { color: #ccc; }
+
+body {
+    background-color: var(--ptt-background-color);
+    padding: 40px 0;
+    --ptt-background-color: #cdcdcd;
+    --ptt-primary-color: #333;
+    --ptt-secondary-color: #777;
+    --ptt-light-color: #eee;
+}
+
+a:link {
+    color: var(--ptt-primary-color);
+}
+
+a:visited {
+    color: var(--ptt-secondary-color);
+}
+
+#action-bar-container {
+    background-color: var(--ptt-secondary-color);
+}
+
+#main-container {
+    padding: 0 10px;
+}
+
+#main-content {
+    white-space: pre-line;
+}
+
+#main-content a:link {
+    box-shadow: none;
+}
+
+#topbar-container {
+    background-color: var(--ptt-primary-color);
+}
+
+#topbar a {
+    color: var(--ptt-light-color);
+}
+
+#topbar a:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#topbar *:not(.board) {
+    display: none !important;
+}
+
+.action-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: var(--ptt-secondary-color);
+    border: none;
+    width: unset;
+    padding: 0 2ex;
+}
+
+.btn:not(.disabled):hover {
+    background-color: rgba(0, 0, 0, .2);
+    color: var(--ptt-light-color);
+}
+
+.btn.selected {
+    background-color: var(--ptt-primary-color);
+    color: var(--ptt-light-color);
+}
+
+.btn.disabled {
+    background-color: var(--ptt-secondary-color);
+    color: var(--ptt-primary-color);
+}
+
+.btn.selected:hover {
+    background-color: var(--ptt-primary-color);
+}
+
+.btn:link,
+.btn:visited {
+    color: var(--ptt-light-color);
+}
+
+.btn-group {
+    width: unset;
+}
+
+body,
+.bbs-content {
+    font-family: 'Microsoft JhengHei', 'PingFang TC', 'Meiryo', sans-serif;
+    font-weight: normal;
+}
+
+.bbs-screen {
+    background-color: var(--ptt-background-color);
+    color: #333;
+    line-height: 1.38;
+}
+
+@media screen and (max-width: 760px) {
+    .bbs-content {
+        font-size: 20px;
+    }
+}
+
+.article-metaline {
+    background-color: var(--ptt-background-color);
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.article-metaline-right {
+    display: none !important;
+}
+
+.article-meta-tag {
+    background-color: var(--ptt-primary-color);
+    color: var(--ptt-light-color);
+}
+
+.article-meta-value {
+    background-color: var(--ptt-background-color);
+    color: #555;
+}
+
+#article-polling {
+    display: none !important;
+}
+
+.push-content {
+    color: var(--ptt-primary-color);
+    line-height: 1.5;
+}
+
+.r-ent {
+    background-color: transparent;
+    border-bottom: 1px solid #333;
+    margin: unset;
+    padding: unset;
+}
+
+.r-ent .nrec {
+    text-align: center;
+}
+
+.r-ent .author {
+    color: #777;
+}
+
+.r-list-container {
+    padding-top: 0;
+}
+
+.r-ent .title a {
+    font-weight: 500;
+}
+
+.search-bar .query {
+    background-color: var(--ptt-primary-color);
+    border-width: 0;
+    border-radius: 10ex;
+    color: var(--ptt-light-color);
+    padding: 5px 10px;
+}
+
+.search-bar .query::placeholder {
+    color: var(--ptt-light-color);
+}
+
+.search-bar .query:-ms-input-placeholder {
+    color: var(--ptt-light-color);
+}
+
+.search-bar .query::-ms-input-placeholder {
+    color: var(--ptt-light-color);
+}
+
+.r-list-sep {
+    height: 2px;
+}
+
+.article-menu.shown,
+.article-menu.shown .dropdown,
+.article-menu .item a {
+    background-color: var(--ptt-secondary-color);
+    color: var(--ptt-light-color);
+}

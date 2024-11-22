@@ -9,7 +9,7 @@
 // @downloadURL https://github.com/Pixmi/personal-firefox-setting/raw/main/userscript/baha-small-window-style.user.js
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=gamer.com.tw
 // @match       *://*.gamer.com.tw/*
-// @resource    CustomCss https://github.com/Pixmi/personal-firefox-setting/raw/main/userstyle/baha-small-window-style.user.css
+// @resource    UserStyle https://github.com/Pixmi/personal-firefox-setting/raw/main/userstyle/baha-small-window-style.user.css
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
 // @noframes
@@ -17,4 +17,4 @@
 // @compatible  Firefox
 // ==/UserScript==
 
-GM_addStyle(GM_getResourceText('CustomCss'));
+GM_addStyle(GM_getResourceText('UserStyle'));
