@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        BAHA small window style
+// @name        [UserStyle] BAHA small window
 // @namespace   https://github.com/Pixmi/
 // @version     1.0.1
 // @description for PC side by small window
@@ -7,7 +7,7 @@
 // @license     GPL-3.0
 // @homepage    https://github.com/Pixmi/personal-firefox-setting
 // @downloadURL https://github.com/Pixmi/personal-firefox-setting/raw/main/userscript/baha-small-window-style.user.js
-// @icon        https://www.google.com/s2/favicons?sz=64&domain=gamer.com.tw
+// @icon        https://github.com/Pixmi/personal-firefox-setting/raw/main/icons/css.svg
 // @match       *://*.gamer.com.tw/*
 // @resource    UserStyle https://github.com/Pixmi/personal-firefox-setting/raw/main/userstyle/baha-small-window-style.user.css
 // @grant       GM_addStyle

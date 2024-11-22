@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        PTT light theme style
+// @name        [UserStyle] PTT light theme
 // @namespace   https://github.com/Pixmi/
 // @version     1.0.0
 // @description for ptt.cc
@@ -7,7 +7,7 @@
 // @license     GPL-3.0
 // @homepage    https://github.com/Pixmi/personal-firefox-setting
 // @downloadURL https://github.com/Pixmi/personal-firefox-setting/raw/main/userscript/ptt-light-theme.user.js
-// @icon        https://www.google.com/s2/favicons?sz=64&domain=ptt.cc
+// @icon        https://github.com/Pixmi/personal-firefox-setting/raw/main/icons/css.svg
 // @match       *://*.ptt.cc/*
 // @resource    UserStyle https://github.com/Pixmi/personal-firefox-setting/raw/main/userstyle/ptt-light-theme.user.css
 // @grant       GM_addStyle
