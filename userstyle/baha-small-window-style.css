@@ -1,0 +1,125 @@
+/* ==UserStyle==
+@name           BAHA small window style
+@namespace      https://github.com/Pixmi/personal-firefox-setting
+@version        1.0.0
+@description    for PC side by small window
+@author         Pixmi
+@license        GPL-3.0
+@preprocessor   stylus
+==/UserStyle== */
+
+@-moz-document domain("gamer.com.tw") {
+    @media screen and (max-width: 760px) {
+        .c-section {
+            max-width: 100vw;
+            text-align: left;
+            margin-bottom: 0;
+        }
+        
+        .c-post__body img,
+        .c-post__body iframe {
+            max-width: 100%;
+        }
+    
+        .c-section__side {
+            background-color: rgba(255, 255, 255, .8);
+            border-radius: 0 5px 5px 0;
+            backdrop-filter: blur(2px);
+            float: unset;
+            transform: translateX(-100%);
+            margin-bottom: -100%;
+            padding: 10px;
+            margin-top: 10px;
+            z-index: 100;
+        }
+        
+        .c-section__side:hover {
+            border-width: 1px 1px 1px 0;
+            border-color: #e5e5e5;
+            border-style: solid;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+            transform: translateX(0);
+            top: 50px;
+        }
+        
+        .c-section__side::after {
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: right;
+            border: 1px solid #e5e5e5;
+            border-radius: 0 5px 5px 0;
+            color: #ddd;
+            content: ">";
+            cursor: pointer;
+            display: inline-block;
+            text-align: right;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            padding: 5px;
+        }
+        
+        .c-section__side:hover::after {
+            background-color: transparent;
+            border-color: transparent;
+            content: " ";
+        }
+        
+        .c-section__main {
+            max-width: 100%;
+        }
+        
+        .bh-banner {
+            margin-top: 84px;
+        }
+        
+        #BH-slave {
+            min-height: unset;
+        }
+        
+        #BH-slave > .BH-rbox,
+        #BH-slave > .baha_quicktool {
+            display: none !important;
+        }
+        
+        #BH-wrapper {
+            width: 100%;
+        }
+        
+        #BH-menu-path {
+            border-bottom: 1px solid #e5e5e5;
+            box-shadow: none;
+        }
+    }
+}
+    
+@-moz-document regexp("https://forum\\.gamer\\.com\\.tw/(A|B|C|G1).*") {
+    @media screen and (max-width: 760px) {
+        ul.BH-menuE {
+            max-width: 100%;
+            min-width: 100%;
+        }
+    
+        ul.BH-menuE li:nth-child(1),
+        ul.BH-menuE li:nth-child(5){
+            display: none !important;
+        }
+        
+        #BH-footer {
+            display: none !important;
+        }
+    }
+}
+    
+@-moz-document regexp("https://forum\\.gamer\\.com\\.tw/C.*") {
+    @media screen and (max-width: 760px) {
+        #BH-master {
+            max-width: 100%;
+            float: unset;
+        }
+        
+        a[name="quickPostAnchor"] + .c-section ~ .c-section {
+            display: none !important;
+        }
+    }
+}
