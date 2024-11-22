@@ -1,8 +1,8 @@
 ! Title: Pixmi uBlock Origin filters
 ! Version: 2024.11.16
 ! Expires: 12 hour
-! Homepage: https://github.com/Pixmi/ubo-filters
-! LICENSE: https://github.com/Pixmi/ubo-filters/blob/main/LICENSE
+! Homepage: https://github.com/Pixmi/personal-firefox-setting
+! LICENSE: https://github.com/Pixmi/personal-firefox-setting/blob/main/LICENSE
 
 ! https://news.tvbs.com.tw
 news.tvbs.com.tw##span.endtext
@@ -118,6 +118,5 @@ manhuagui.com##table.tbCenter:style(border: none !important; width: auto !import
 manhuagui.com##img#mangaFile:style(max-width: 100% !important; max-height: 100vh !important; height: 100vh !important;)
 
 ! y3939.net block and style
-y3939.net##.topnav
-y3939.net##.header_box,.function_box,#btn_newvote,.voteposter_photo,.photo_time,.topbar_name+div:matches-media((max-width: 800px)):style(display: none !important)
+y3939.net##.topnav,.header_box,.function_box,#btn_newvote,.voteposter_photo,.photo_time,.topbar_name+div:matches-media((max-width: 800px)):style(display: none !important)
 y3939.net##.msg_name:matches-media((max-width: 800px)):style(width: 100px !important)
