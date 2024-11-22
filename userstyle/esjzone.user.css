@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name           esjzone
+@namespace      https://github.com/Pixmi/
+@version        1.0.0
+@description    for esjzone
+@author         Pixmi
+@license        GPL-3.0
+@preprocessor   stylus
+==/UserStyle== */
+
+div, p, span, a {
+    font-family: 'Microsoft JhengHei', 'PingFang TC', 'Meiryo', sans-serif !important;
+}
+
+.navbar > .customizer {
+    top: unset !important;
+    bottom: 5px !important;
+}
+
+.customizer-toggle {
+    top: unset !important;
+    bottom: 0 !important;
+}
+
+.scroll-to-end-btn {
+    display: none !important;
+}
