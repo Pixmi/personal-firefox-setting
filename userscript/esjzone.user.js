@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name        [UserStyle] esjzone
+// @name        [UserStyle] ESJ Zone
 // @namespace   https://github.com/Pixmi/
 // @version     1.0.0
-// @description for esjzone
+// @description for esjzone.cc and esjzone.me
 // @author      Pixmi
 // @license     GPL-3.0
 // @homepage    https://github.com/Pixmi/personal-firefox-setting
