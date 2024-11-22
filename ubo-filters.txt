@@ -83,7 +83,3 @@ shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
 unikoshardware.com##^.widget.widget-no-margin.uniko-widget
 unikoshardware.com##^.jeg_share_button
 unikoshardware.com##.entry-content>.content-inner:style(margin-left:0 !important)
-
-! y3939.net block and style
-y3939.net##.topnav,.header_box,.function_box,#btn_newvote,.voteposter_photo,.photo_time,.topbar_name+div:matches-media((max-width: 800px)):style(display: none !important)
-y3939.net##.msg_name:matches-media((max-width: 800px)):style(width: 100px !important)
