@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        y3939 auto vote and style
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.0
+// @version     1.0.1
 // @description for y3939.net
 // @author      Pixmi
 // @license     MIT
@@ -14,7 +14,7 @@
 // ==/UserScript==
 
 GM_addStyle(`
-@midia (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .topnav,
     .header_box,
     .function_box,
