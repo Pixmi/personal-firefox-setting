@@ -73,7 +73,7 @@
     }
     
     #BH-slave {
-        min-height: unset;
+        min-height: unset !important;
     }
     
     #BH-slave > .BH-rbox,

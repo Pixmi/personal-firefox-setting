@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        [UserStyle] BAHA small window
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.1
+// @version     1.0.2
 // @description for PC side by small window
 // @author      Pixmi
 // @license     GPL-3.0
