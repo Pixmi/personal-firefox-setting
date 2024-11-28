@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        [UserStyle] PTT light theme
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.0
+// @version     1.0.1
 // @description for ptt.cc
 // @author      Pixmi
 // @license     GPL-3.0

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        [UserStyle] Wenku8
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.0
+// @version     1.0.1
 // @description for wenku8.net
 // @author      Pixmi
 // @license     GPL-3.0

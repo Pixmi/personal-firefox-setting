@@ -7,7 +7,6 @@
 // @license     MIT
 // @homepage    https://github.com/Pixmi/personal-firefox-setting
 // @downloadURL https://github.com/Pixmi/personal-firefox-setting/raw/main/userscript/y3939.user.js
-// @icon        http://www.google.com/s2/favicons?domain=https://y3939.net/
 // @match       *://*.y3939.net/*
 // @grant       GM_addStyle
 // @run-at      document-body

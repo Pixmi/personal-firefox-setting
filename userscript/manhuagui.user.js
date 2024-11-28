@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        [UserStyle] manhuagui
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.0
+// @version     1.0.1
 // @description for manhuagui.com
 // @author      Pixmi
 // @license     GPL-3.0

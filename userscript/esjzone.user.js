@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        [UserStyle] ESJ Zone
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.0
+// @version     1.0.1
 // @description for esjzone.cc and esjzone.me
 // @author      Pixmi
 // @license     GPL-3.0
