@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        [UserStyle] Gamer.com.tw
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.0
+// @version     1.0.1
 // @description for gamer.com.tw
 // @author      Pixmi
 // @license     GPL-3.0
@@ -116,7 +116,7 @@ const UserStyle = `
         float: unset;
     }
     
-    a[name="quickPostAnchor"] + .c-section ~ .c-section {
+    a[name="quickPostAnchor"] + .c-section + .c-section {
         display: none !important;
     }
 }`;
