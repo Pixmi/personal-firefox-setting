@@ -7,7 +7,6 @@
 // @license     GPL-3.0
 // @homepage    https://github.com/Pixmi/personal-firefox-setting
 // @downloadURL https://github.com/Pixmi/personal-firefox-setting/raw/main/userscript/manhuagui.user.js
-// @icon        https://github.com/Pixmi/personal-firefox-setting/raw/main/icons/css.svg
 // @match       *://*.manhuagui.com/*
 // @resource    UserStyle https://github.com/Pixmi/personal-firefox-setting/raw/main/userstyle/manhuagui.user.css
 // @grant       GM_addStyle

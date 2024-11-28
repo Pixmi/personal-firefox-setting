@@ -7,7 +7,6 @@
 // @license     GPL-3.0
 // @homepage    https://github.com/Pixmi/personal-firefox-setting
 // @downloadURL https://github.com/Pixmi/personal-firefox-setting/raw/main/userscript/ptt-light-theme.user.js
-// @icon        https://github.com/Pixmi/personal-firefox-setting/raw/main/icons/css.svg
 // @match       *://*.ptt.cc/*
 // @resource    UserStyle https://github.com/Pixmi/personal-firefox-setting/raw/main/userstyle/ptt-light-theme.user.css
 // @grant       GM_addStyle

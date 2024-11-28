@@ -7,7 +7,6 @@
 // @license     GPL-3.0
 // @homepage    https://github.com/Pixmi/personal-firefox-setting
 // @downloadURL https://github.com/Pixmi/personal-firefox-setting/raw/main/userscript/gamer.user.js
-// @icon        https://github.com/Pixmi/personal-firefox-setting/raw/main/icons/css.svg
 // @match       *://*.gamer.com.tw/*
 // @grant       GM_addStyle
 // @noframes

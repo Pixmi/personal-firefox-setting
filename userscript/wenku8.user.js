@@ -7,7 +7,6 @@
 // @license     GPL-3.0
 // @homepage    https://github.com/Pixmi/personal-firefox-setting
 // @downloadURL https://github.com/Pixmi/personal-firefox-setting/raw/main/userscript/wenku8.user.js
-// @icon        https://github.com/Pixmi/personal-firefox-setting/raw/main/icons/css.svg
 // @match       *://*.wenku8.net/*
 // @resource    UserStyle https://github.com/Pixmi/personal-firefox-setting/raw/main/userstyle/wenku8.user.css
 // @grant       GM_addStyle
