@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("gamer.com.tw") {
+  #BH-bigbanner, #flySalve, .BA-billboard, #flyRightBox, .BA-left > div:first-child{display:none;}
+  .BA-wrapper.BA-main{width:950px;}
+  .GN-lbox3{width:978px;}
+  .GN-lbox8, .GN-lbox9{width:980px;}
+  #BH-master h4, .GN-lbox5, .GN-lbox6{width:1000px;}  
+  #videoDiv iframe, .lazyloaded {display: block; margin: 0 auto;}  
+}

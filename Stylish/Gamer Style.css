@@ -1,0 +1,132 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("gamer.com.tw") {
+    /* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess */
+    @font-face {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 100;
+        src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+    }
+    @font-face {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 300;
+        src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+    }
+    @font-face {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+    }
+    @font-face {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 500;
+        src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+    }
+    @font-face {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+    }
+    @font-face {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 900;
+        src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'),
+             url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+    }
+    #BH-bigbanner, #flySalve, .BA-billboard, #flyRightBox, .BA-left > div:first-child, #ieslider {
+        display: none;
+    }
+    .BA-wrapper.BA-main {
+        width: 950px;
+    }
+    .GN-lbox3 {
+        width: 978px;
+    }
+    .GN-lbox8, .GN-lbox9 {
+        width: 980px;
+    }
+    #BH-master h4, .GN-lbox5, .GN-lbox6 {
+        width: 1000px;
+    }
+    #videoDiv iframe, .lazyloaded {
+        display: block;
+        margin: 0 auto;
+    }
+    #BH-master {
+        width: 1000px;
+        float: unset;
+    }
+    #BH-slave {
+        background-color: #fff;
+        position: fixed;
+        z-index: 100;
+        top: 35px;
+        bottom: 0;
+        left: -300px;
+        border-right: 5px solid #117e96;
+        overflow-y: auto;
+    }
+    #BH-slave:hover,
+    #BH-slave:active {
+        left: 0;
+        border-right-width: 1px;
+    }
+    #BH-footer, .FM-lbox1 {
+        display: none !important;
+    }
+    .FM-tags {
+        border-bottom: none;
+        font-size: 14px;
+    }
+    .FM-tags a {
+        background-color: #117e96;
+        background-image: none;
+        border: none;
+        color: #fff;
+        font-weight: 300;
+        width: 91px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 0;
+        position: relative;
+        z-index: 1;
+    }
+    .FM-tags a:hover {
+        background-color: #249db8;
+        background-image: none;
+    }
+    .FM-tags a:last-child {
+        width: 90px;
+        margin-right: 0;
+    }
+    .FM-blist1 {
+        background-color: #117e96;
+        background-image: none;
+    }
+    .FM-blist tr.FM-blist1:hover {
+        background-color: #249db8 !important;
+        background-image: none;
+    }
+    .FM-blist {
+        border-color: #117e96;
+    }
+    .FM-blist td {
+        border-bottom: none;
+    }
+}

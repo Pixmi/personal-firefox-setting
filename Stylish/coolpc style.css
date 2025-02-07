@@ -1,0 +1,12 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("coolpc.com.tw") {
+  span#Psu,span#tip,span#doc,div#hid,
+  div#hid + table > caption,
+  div#hid + table > tbody > tr > td:nth-child(2) {
+    display: none !important;
+  }
+  body {
+    overflow: unset !important;
+  }
+}

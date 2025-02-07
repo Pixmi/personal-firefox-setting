@@ -1,0 +1,13 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("movie.i-kale.net") {
+  .breadcrumbs.margin-bottom-40,
+  .row-fluid > .span3,
+  .row-fluid > .span9 > .post-comment,
+  .row-fluid > .span9 > hr {
+    display: none;
+  }
+  .row-fluid > .span9 {
+    width: 100%;
+  }
+}

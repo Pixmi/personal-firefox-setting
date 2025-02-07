@@ -1,0 +1,11 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("komica.org") {
+  a[href] {
+    color: #999;
+    text-decoration: none;
+  }
+  a[href]:hover {
+    color: #333;
+  }
+}
