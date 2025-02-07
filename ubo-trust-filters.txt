@@ -50,7 +50,7 @@ m.youtube.com/redir.php$urlskip=?url +https
 !#endif
 
 ! i.imgur.net redirect to i.pixmi.net
-i.imgur.com$uritransform=/([a-z0-9]{7}).(jpg|jpeg|png|gif|mp4)/redir\/i.pixmi.net\/\$1&name=\$2/i
+i.imgur.com$uritransform=/([a-z0-9]{7}).(jpg|jpeg|png|gif|mp4)/redir\/i.pixmi.net\/\$1\/imgur.\$2/i
 i.imgur.com/redir/$urlskip=/redir\/(i\.pixmi\.net.*)/ +https
 ! remove imgur recirc
 imgur.com##^.BottomRecirc
