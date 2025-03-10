@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        y3939 auto vote and style
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.1
+// @version     1.0.2
 // @description for y3939.net
 // @author      Pixmi
 // @license     MIT
@@ -32,6 +32,9 @@ GM_addStyle(`
 (function() {
     'use strict';
 
+    const FIXED_TITLE = '鳥巢';
+    document.title = FIXED_TITLE;
+
     function delay(sec) {
         return new Promise((resolve) => {
             setTimeout(resolve, sec * 1000);
@@ -52,28 +55,29 @@ GM_addStyle(`
         })
     }
 
-    const observeConfig = {
-        childList: true,
-        attributes: false,
-        characterData: false,
-    };
-
-    const ChatObserver = new MutationObserver(function (mutations) {
-        mutations.forEach((record) => {
-            if (record.addedNodes.length) {
-                record.addedNodes.forEach((item) => {
-                    let message = item.querySelector(".msg_text");
-                    message.querySelector("span.time").remove();
-                    if (/^#vote/.test(message.textContent)) vote();
-                });
+    const chatObserver = new MutationObserver((mutations) => {
+        for (const record of mutations) {
+            if (!record.addedNodes.length) continue;
+            for (const item of record.addedNodes) {
+                let message = item.querySelector('.msg_text')?.innerText || false;
+                if (!message) continue;
+                if (/^#vote/.test(message)) vote();
             }
-        });
+        }
+    });
+
+    const titleObserver = new MutationObserver(() => {
+        if (document.title !== FIXED_TITLE) {
+            document.title = FIXED_TITLE;
+        }
     });
 
     let bot = setInterval(() => {
-        let ChatList = document.body.querySelector("#msg_table > tbody");
-        if (ChatList) {
-            ChatObserver.observe(ChatList, observeConfig);
+        const chatElement = document.body.querySelector('#msg_table > tbody');
+        const titleElement = document.querySelector('title');
+        if (chatElement && titleElement) {
+            chatObserver.observe(chatElement, { childList: true, attributes: false, characterData: false });
+            titleObserver.observe(titleElement, { childList: true, subtree: true });
             console.log('auto vote start.')
             clearInterval(bot);
         }
