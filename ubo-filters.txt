@@ -1,5 +1,5 @@
 ! Title: Pixmi uBlock Origin filters
-! Version: 2024.11.16
+! Version: 2025.03.13
 ! Expires: 12 hour
 ! Homepage: https://github.com/Pixmi/personal-firefox-setting
 ! LICENSE: https://github.com/Pixmi/personal-firefox-setting/blob/main/LICENSE
@@ -8,16 +8,20 @@
 news.tvbs.com.tw##span.endtext
 
 ! https://www.mobile01.com
-www.mobile01.com##.fancybox-container
+mobile01.com##.fancybox-container
 
 ! https://www.myacg.com.tw
-www.myacg.com.tw##.acg_top
+myacg.com.tw##.acg_top
 
 ! https://www.card.rakuten.com.tw
 www.card.rakuten.com.tw##.popup
 
 ! https://www.facebook.com
-www.facebook.com##div[data-nosnippet=""]
+facebook.com##div[data-nosnippet=""]
+facebook.com##+js(trusted-click-element, body > div[id^="mount"] #scrollview ~ div div[role="button"]:has(> div[data-visualcompletion="ignore"]))
+facebook.com##div[id^="mount"] div:not([id]):not([class]):not([style]) > div[data-nosnippet]
+facebook.com##+js(aeld, scroll)
+facebook.com##body > div[class*="__fb-light-mode"]
 
 ! https://yahoo.com
 yahoo.com###module-stockSearchBar
@@ -42,7 +46,7 @@ technews.tw##.widget_banner.widget
 technews.tw##a#scrollup:remove()
 technews.tw##a#scrolldown:remove()
 
-! storm.mg
+! https://storm.mg
 storm.mg##.support_us_btn
 storm.mg###side_bar_inner > div:not(#vue_side_bar_content)
 storm.mg###feature_img_banner_wrapper
@@ -52,7 +56,7 @@ storm.mg###category_content
 storm.mg###more_news_wrapper
 storm.mg###footer_inner
 
-! global.udn.com
+! https://global.udn.com
 global.udn.com##.social_bar
 global.udn.com##nav.channel-link
 global.udn.com###comments
@@ -60,17 +64,16 @@ global.udn.com###story_end+div
 global.udn.com##nav.only_web
 global.udn.com###menu_bar
 
-! einsurance.skl.com.tw
+! https://einsurance.skl.com.tw
 einsurance.skl.com.tw##.msg-container
 
-! http://www.youtube.com
+! https://www.youtube.com
 youtube.com##+js(nano-stb, resolve(1), *, 0.001)
-||googlevideo.com/videoplayback$xhr,3p,method=get,domain=www.youtube.com
 
-! kfcclub.com.tw
+! https://kfcclub.com.tw
 kfcclub.com.tw###BN_Linker_OrderComplete
 
-! gigafile.nu
+! https://gigafile.nu
 gigafile.nu###main_panel
 
 ! shopee
@@ -79,7 +82,40 @@ shopee.*^$removeparam=sp_atk
 shopee.*^$removeparam=xptdk
 shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
 
-! unikoshardware.com
+! https://unikoshardware.com
 unikoshardware.com##^.widget.widget-no-margin.uniko-widget
 unikoshardware.com##^.jeg_share_button
 unikoshardware.com##.entry-content>.content-inner:style(margin-left:0 !important)
+
+! https://sinya.com.tw
+sinya.com.tw##.swiper-diyModal.swiper-container-initialized.swiper-container-horizontal
+
+! https://gamersky.com
+gamersky.com##.gsBackgroundRight
+gamersky.com##.gsBackgroundLeft
+gamersky.com##.pc-downLoad
+gamersky.com##.pcAdbanner.assembler-adBanner
+
+! 偽 ptt
+||webptt.cc^
+||web-ptt.tw^
+||pttweb.cc^
+||pttweb.tw^
+||ucptt.com^
+||ptt01.cc^
+||pttyes.com^
+||moptt.tw^
+||disp.cc^
+||ptt-diary.tw^
+
+! 封鎖偽 ptt 出現在 duckduckgo 的搜尋結果
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="webptt.cc"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="web-ptt.tw"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="pttweb.cc"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="pttweb.tw"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="ucptt.com"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="ptt01.cc"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="pttyes.com"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="moptt.tw"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="disp.cc"])
+duckduckgo.com##li[data-layout="organic"]:has(a[href*="ptt-diary.tw"])
