@@ -69,6 +69,12 @@ einsurance.skl.com.tw##.msg-container
 
 ! https://www.youtube.com
 youtube.com##+js(nano-stb, resolve(1), *, 0.001)
+! youtube origin image (ggpht)
+ggpht.com^$uritransform=/([a-zA-Z0-9_-]+)=(.*)/\$1=s0/i,domain=~youtube.com
+! youtube origin image (googleusercontent)
+googleusercontent.com^$uritransform=/([a-zA-Z0-9_-]+)=(.*)/\$1=s0/i,domain=~youtube.com
+! switch youtube embed to click2load
+||youtube.com/embed/$3p,frame,redirect=click2load.html
 
 ! https://kfcclub.com.tw
 kfcclub.com.tw###BN_Linker_OrderComplete
@@ -119,3 +125,13 @@ duckduckgo.com##li[data-layout="organic"]:has(a[href*="pttyes.com"])
 duckduckgo.com##li[data-layout="organic"]:has(a[href*="moptt.tw"])
 duckduckgo.com##li[data-layout="organic"]:has(a[href*="disp.cc"])
 duckduckgo.com##li[data-layout="organic"]:has(a[href*="ptt-diary.tw"])
+
+! ngabbs.com to bbs.nga.cn
+ngabbs.com/read.php^$uritransform=/read.php(.*)/redir.php?url=bbs.nga.cn\/read.php\$1/i
+ngabbs.com/thread.php^$uritransform=/thread.php(.*)/redir.php?url=bbs.nga.cn\/thread.php\$1/i
+ngabbs.com/redir.php$urlskip=?url +https
+
+! nga.178.com to bbs.nga.cn
+nga.178.com/read.php^$uritransform=/read.php(.*)/redir.php?url=bbs.nga.cn\/read.php\$1/i
+nga.178.com/thread.php^$uritransform=/thread.php(.*)/redir.php?url=bbs.nga.cn\/thread.php\$1/i
+nga.178.com/redir.php$urlskip=?url +https
