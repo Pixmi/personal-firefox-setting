@@ -64,6 +64,11 @@ global.udn.com###story_end+div
 global.udn.com##nav.only_web
 global.udn.com###menu_bar
 
+! https://udn.com
+udn.com###sidebar
+udn.com##.header
+udn.com##.navigation
+
 ! https://einsurance.skl.com.tw
 einsurance.skl.com.tw##.msg-container
 
