@@ -8,13 +8,21 @@
 @preprocessor   stylus
 ==/UserStyle== */
 
-div, p, span, a {
-    font-family: 'Microsoft JhengHei', 'PingFang TC', 'Meiryo', sans-serif !important;
-}
-
 .navbar > .customizer {
     top: unset !important;
-    bottom: 5px !important;
+    bottom: 15px !important;
+}
+
+.customizer-body {
+    border-bottom-left-radius: 0 !important;
+}
+
+.page-title {
+    background-color: transparent !important;
+}
+
+.page-title h1 {
+    color: var(--light) !important;
 }
 
 .customizer-toggle {
@@ -24,4 +32,12 @@ div, p, span, a {
 
 .scroll-to-end-btn {
     display: none !important;
+}
+
+.site-footer {
+    display: none !important;
+}
+
+#mycolor-1 {
+    background: #1f1f1f !important;
 }
