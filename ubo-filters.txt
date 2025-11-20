@@ -45,6 +45,9 @@ technews.tw##.coffee-btn-wrapper
 technews.tw##.widget_banner.widget
 technews.tw##a#scrollup:remove()
 technews.tw##a#scrolldown:remove()
+technews.tw###fbSEOComments
+technews.tw##.footer_frame
+technews.tw###secondary
 
 ! https://storm.mg
 storm.mg##.support_us_btn
@@ -72,14 +75,32 @@ udn.com##.navigation
 ! https://einsurance.skl.com.tw
 einsurance.skl.com.tw##.msg-container
 
-! https://www.youtube.com
-youtube.com##+js(nano-stb, resolve(1), *, 0.001)
+! youtube mobile to desktop only on pc
+!#if !env_mobile
+m.youtube.com/watch$uritransform=/watch(.*)/redir.php?url=youtube.com\/watch\$1/i
+m.youtube.com/redir.php$urlskip=?url +https
+!#endif
 ! youtube origin image (ggpht)
 ggpht.com^$uritransform=/([a-zA-Z0-9_-]+)=(.*)/\$1=s0/i,domain=~youtube.com
 ! youtube origin image (googleusercontent)
 googleusercontent.com^$uritransform=/([a-zA-Z0-9_-]+)=(.*)/\$1=s0/i,domain=~youtube.com
 ! switch youtube embed to click2load
 ||youtube.com/embed/$3p,frame,redirect=click2load.html
+||youtube-nocookie.com^$3p,frame,redirect=click2load.html
+||googlevideo.com/videoplayback$xhr,3p,method=get,domain=www.youtube.com
+
+www.youtube.com###ytd-player.ytd-watch-flexy:style(border-radius:0 !important;)
+www.youtube.com##ytd-masthead:style(opacity:0.7 !important;)
+
+! gamer mobile to desktop only on pc
+!#if !env_mobile
+m.gamer.com.tw/forum^$uritransform=/forum\/(.*)/redir.php?url=forum.gamer.com.tw\/\$1/i
+m.gamer.com.tw/redir.php$urlskip=?url +https
+!#endif
+! gamer.com.tw skip url
+ref.gamer.com.tw/redir.php$urlskip=?url
+
+forum.gamer.com.tw###baha_beta_tool
 
 ! https://kfcclub.com.tw
 kfcclub.com.tw###BN_Linker_OrderComplete
@@ -89,14 +110,22 @@ gigafile.nu###main_panel
 
 ! shopee
 shopee.*##^[data-sqe="ad"]:upward([data-sqe="item"])
+shopee.*##.shop-decoration
 shopee.*^$removeparam=sp_atk
 shopee.*^$removeparam=xptdk
 shopee.*^$uritransform=/(.*)-i.([\d]+).([\d]+)/product\/\$2\/\$3/i
+
+! https://www.ruten.com.tw
+www.ruten.com.tw##.spotlight-section
 
 ! https://unikoshardware.com
 unikoshardware.com##^.widget.widget-no-margin.uniko-widget
 unikoshardware.com##^.jeg_share_button
 unikoshardware.com##.entry-content>.content-inner:style(margin-left:0 !important)
+unikoshardware.com##.jeg_sticky_sidebar.jeg_sidebar
+unikoshardware.com##.comment-respond
+unikoshardware.com##.jeg_main_content:style(width:100% !important;)
+unikoshardware.com##.with-share .content-inner:style(margin-left:unset !important;)
 
 ! https://sinya.com.tw
 sinya.com.tw##.swiper-diyModal.swiper-container-initialized.swiper-container-horizontal
@@ -106,6 +135,14 @@ gamersky.com##.gsBackgroundRight
 gamersky.com##.gsBackgroundLeft
 gamersky.com##.pc-downLoad
 gamersky.com##.pcAdbanner.assembler-adBanner
+
+! moptt.tw to ptt.cc
+moptt.tw^$uritransform=/p\/([0-9a-zA-Z_-]+).M(.*)/redir.php?url=www.ptt.cc\/bbs\/\$1\/M\$2.html/i
+moptt.tw/redir.php$urlskip=?url +https
+
+! pttweb.cc to ptt.cc
+www.pttweb.cc/bbs/^$uritransform=/bbs\/([0-9a-zA-Z_-]+).M(.*)/redir.php?url=www.ptt.cc\/bbs\/\$1\/M\$2.html/i
+www.pttweb.cc/redir.php$urlskip=?url +https
 
 ! 偽 ptt
 ||webptt.cc^
@@ -140,3 +177,6 @@ ngabbs.com/redir.php$urlskip=?url +https
 nga.178.com/read.php^$uritransform=/read.php(.*)/redir.php?url=bbs.nga.cn\/read.php\$1/i
 nga.178.com/thread.php^$uritransform=/thread.php(.*)/redir.php?url=bbs.nga.cn\/thread.php\$1/i
 nga.178.com/redir.php$urlskip=?url +https
+
+! bsky.app image replace
+cdn.bsky.app^$uritransform=/feed_thumbnail/feed_fullsize/i
