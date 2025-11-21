@@ -1,10 +1,27 @@
 ! Title: Pixmi uBlock Origin trust-filters
-! Version: 2025.11.20
+! Version: 2025.11.21
 ! Expires: 12 hour
 ! Homepage: https://github.com/Pixmi/personal-firefox-setting
 ! LICENSE: https://github.com/Pixmi/personal-firefox-setting/blob/main/LICENSE
 
 $3p,to=facebook.*|instagram.com,from=~facebook.com|~instagram.com
+
+! youtube mobile to desktop only on pc
+!#if !env_mobile
+m.youtube.com/watch$uritransform=/watch(.*)/redir.php?url=youtube.com\/watch\$1/i
+m.youtube.com/redir.php$urlskip=?url +https
+!#endif
+! youtube origin image (ggpht)
+ggpht.com^$uritransform=/([a-zA-Z0-9_-]+)=(.*)/\$1=s0/i,domain=~youtube.com
+! youtube origin image (googleusercontent)
+googleusercontent.com^$uritransform=/([a-zA-Z0-9_-]+)=(.*)/\$1=s0/i,domain=~youtube.com
+! switch youtube embed to click2load
+||youtube.com/embed/$3p,frame,redirect=click2load.html
+||youtube-nocookie.com^$3p,frame,redirect=click2load.html
+||googlevideo.com/videoplayback$xhr,3p,method=get,domain=www.youtube.com
+
+www.youtube.com###ytd-player.ytd-watch-flexy:style(border-radius:0 !important;)
+www.youtube.com##ytd-masthead:style(opacity:0.7 !important;)
 
 ! twitter image replace
 pbs.twimg.com/media^$uritransform=/media\/([\w-]+)\?format=(jpg|jpeg|png|gif)(.*)/redir\/?url=i.pixmi.net\/twimg\/\$1.\$2/i,domain=~x.com|~discord.com
