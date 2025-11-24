@@ -101,8 +101,10 @@ const UserStyle = `
         min-width: 100%;
     }
 
-    ul.BH-menuE li:nth-child(1),
-    ul.BH-menuE li:nth-child(5){
+    ul.BH-menuE > li:nth-child(1),
+    ul.BH-menuE > li:nth-child(4),
+    ul.BH-menuE > li:nth-child(5),
+    ul.BH-menuE > ul {
         display: none !important;
     }
     
