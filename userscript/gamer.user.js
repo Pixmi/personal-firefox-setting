@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        [UserStyle] Gamer.com.tw
 // @namespace   https://github.com/Pixmi/
-// @version     1.0.2
+// @version     1.0.3
 // @description for gamer.com.tw
 // @author      Pixmi
 // @license     GPL-3.0
