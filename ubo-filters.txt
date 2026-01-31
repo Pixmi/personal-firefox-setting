@@ -75,14 +75,6 @@ udn.com##.navigation
 ! https://einsurance.skl.com.tw
 einsurance.skl.com.tw##.msg-container
 
-! gamer mobile to desktop only on pc
-!#if !env_mobile
-m.gamer.com.tw/forum^$uritransform=/forum\/(.*)/redir.php?url=forum.gamer.com.tw\/\$1/i
-m.gamer.com.tw/redir.php$urlskip=?url +https
-!#endif
-! gamer.com.tw skip url
-ref.gamer.com.tw/redir.php$urlskip=?url
-
 forum.gamer.com.tw###baha_beta_tool
 
 ! https://kfcclub.com.tw
